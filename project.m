@@ -1,11 +1,12 @@
 clear all; close all;
-[data1,data2,data3,data4,data5,data6] = loadData();
+[data1,data2,data3,data4,data5,data6,data7,data8] = loadData();
+%temp = loadData();
 right = 0;%counter
 total = 0;%counter
     [traindata,testdata] = randomSplit(data4,0.8);
     
-    traindata = traindata;
-    testdata = testdata;
+    traindata = data1;
+    testdata = data3;
 
     shape = size(testdata);
     numofcol = shape(2);
