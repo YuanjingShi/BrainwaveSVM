@@ -2,7 +2,7 @@ clear all; close all;
 [data1,data2,data3,data4,data5,data6] = loadData();
 right = 0;%counter
 total = 0;%counter
-    [traindata,testdata] = randomSplit(data2,0.8);
+    [traindata,testdata] = randomSplit(data4,0.8);
     
     traindata = traindata;
     testdata = testdata;
