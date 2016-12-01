@@ -1,38 +1,39 @@
 function [dataTotal, labelTotal] = loadData()
 load('/Users/York/GitHub/BrainwaveSVM/data/LiuZiAng.mat');
-data1 = instance(:,50:100,:);
+data1 = featureExtract(instance);
 label1 = label;
 
 load('/Users/York/GitHub/BrainwaveSVM/data/OuYangXiaTing.mat');
-data2 = instance(:,50:100,:);
+data2 = featureExtract(instance);
 label2 = label;
 
 load('/Users/York/GitHub/BrainwaveSVM/data/LiDaWei.mat');
-data3 = instance(:,50:100,:);
+data3 = featureExtract(instance);
 label3 = label;
 
 load('/Users/York/GitHub/BrainwaveSVM/data/ZhouYi.mat');
-data4 = instance(:,50:100,:);
+data4 = featureExtract(instance);
 label4 = label;
 
 load('/Users/York/GitHub/BrainwaveSVM/data/YipKaiYan.mat');
-data5 = instance(:,50:100,:);
+data5 = featureExtract(instance);
 label5 = label;
 
 load('/Users/York/GitHub/BrainwaveSVM/data/FuKuoHao.mat');
-data6 = instance(:,50:100,:);
+data6 = featureExtract(instance);
 label6 = label;
 
 load('/Users/York/GitHub/BrainwaveSVM/data/KongYuChing.mat');
-data7 = instance(:,50:100,:);
+data7 = featureExtract(instance);
 label7 = label;
 
-load('/Users/York/GitHub/BrainwaveSVM/data/ChengHaiYu.mat');
+load('/Users/York/GitHub/BrainwaveSVM/data/ChenHaiYu.mat');
 data8 = instance(:,50:100,:);
 label8 = label;
 
 labelTotal = [label1; label2; label3; label4; label5; label6; label7; label8];
 
-noUse = [19;11;4;3;10;16;18;23;2;9;15;22;26;1;8;14;21;25;32;125;126;127;128];
-
+dataTotal = [data1, data2, data3, data4, data5, data6, data7, data8];
+size(labelTotal)
+size(dataTotal)
 end
