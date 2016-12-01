@@ -1,5 +1,5 @@
 clear all; close all;
-[data1,data2,data3,data4,data5,data6,data7,data8] = loadData();
+[dataTotal,labelTotal] = loadData();
 %temp = loadData();
 right = 0;%counter
 total = 0;%counter
