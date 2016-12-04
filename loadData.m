@@ -28,12 +28,12 @@ data7 = featureExtract(instance);
 label7 = label;
 
 load('/Users/York/GitHub/BrainwaveSVM/data/ChenHaiYu.mat');
-data8 = instance(:,50:100,:);
+data8 = featureExtract(instance);
 label8 = label;
 
 labelTotal = [label1; label2; label3; label4; label5; label6; label7; label8];
-
 dataTotal = [data1, data2, data3, data4, data5, data6, data7, data8];
-size(labelTotal)
-size(dataTotal)
+%dataTotal = permute(dataTotal,[2 1]);
+%size(labelTotal)
+%size(dataTotal)
 end
